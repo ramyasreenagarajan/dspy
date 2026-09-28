@@ -93,7 +93,6 @@ class ChatAdapter(Adapter):
                 # retry with a different adapter. Raise the original error instead of the fallback error.
                 raise
             return self._make_json_adapter_fallback()(lm, lm_kwargs, signature, demos, inputs)
-
     async def acall(
         self,
         lm: BaseLM,
