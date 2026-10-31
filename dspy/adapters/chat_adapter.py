@@ -100,7 +100,7 @@ class ChatAdapter(Adapter):
         signature: type[Signature],
         demos: list[dict[str, Any]],
         inputs: dict[str, Any],
-    ) -> list[dict[str, Any]]:
+     -> list[dict[str, Any]]:
         try:
             return await super().acall(lm, lm_kwargs, signature, demos, inputs)
         except Exception as e:
